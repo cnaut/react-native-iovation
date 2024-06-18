@@ -1,4 +1,4 @@
-package com.iovation
+package com.iovationreactnative
 
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
