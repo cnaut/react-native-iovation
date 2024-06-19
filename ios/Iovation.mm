@@ -1,13 +1,13 @@
 #import <React/RCTBridgeModule.h>
+@import FraudForce;
 
-@interface RCT_EXTERN_MODULE(Iovation, NSObject)
+@interface RCT_EXTERN_MODULE (Iovation, NSObject)
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(getBlackbox
+                  : (RCTPromiseResolveBlock)resolve withRejecter
+                  : (RCTPromiseRejectBlock)reject)
 
-+ (BOOL)requiresMainQueueSetup
-{
++ (BOOL)requiresM {
   return NO;
 }
 

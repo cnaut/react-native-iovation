@@ -1,8 +1,8 @@
 @objc(Iovation)
 class Iovation: NSObject {
-
-  @objc(multiply:withB:withResolver:withRejecter:)
-  func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-    resolve(a*b)
+  @objc(getBlackbox:withRejecter:)
+  func getBlackbox(resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
+    let blackbox = FraudForce.blackbox()
+    resolve(blackbox)
   }
 }
