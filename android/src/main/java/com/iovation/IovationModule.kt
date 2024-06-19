@@ -32,6 +32,11 @@ class IovationModule(reactContext: ReactApplicationContext) :
 	}
 
   @ReactMethod
+  fun multiply(a: Double, b: Double, promise: Promise) {
+    promise.resolve(a * b)
+  }
+
+  @ReactMethod
   fun getBlackbox(promise: Promise) {
     val blackbox = FraudForceManager.getBlackbox(context)
     promise.resolve(blackbox)
