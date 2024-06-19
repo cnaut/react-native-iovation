@@ -1,5 +1,5 @@
+#import <FraudForce/FraudForce.h>
 #import <React/RCTBridgeModule.h>
-@import FraudForce;
 
 @interface RCT_EXTERN_MODULE (Iovation, NSObject)
 
