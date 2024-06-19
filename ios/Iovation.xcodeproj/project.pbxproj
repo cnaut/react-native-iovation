@@ -461,7 +461,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-fcxx-modules";
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"-fmodules",
+					"-fcxx-modules",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = takenos.Iovation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -487,7 +490,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "-fcxx-modules";
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"-fcxx-modules",
+					"-fmodules",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = takenos.Iovation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
