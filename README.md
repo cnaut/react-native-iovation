@@ -5,17 +5,21 @@ iovation SDK for react native
 ## Installation
 
 ```sh
+# using npm
 npm install react-native-iovation
+
+# OR using Yarn
+yarn add react-native-iovation
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-iovation';
+import { getBlackbox } from 'react-native-iovation';
 
 // ...
 
-const result = await multiply(3, 7);
+const blackbox = await getBlackbox();
 ```
 
 ## Contributing

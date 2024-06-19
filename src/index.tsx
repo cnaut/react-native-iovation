@@ -17,10 +17,6 @@ const Iovation = NativeModules.Iovation
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Iovation.multiply(a, b);
-}
-
 export function getBlackbox(): Promise<string> {
   return Iovation.getBlackbox();
 }
