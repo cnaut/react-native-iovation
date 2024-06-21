@@ -6,7 +6,7 @@ buildscript {
     google()
     mavenCentral()
     flatDir {
-        dirs 'libs'
+      dirs 'libs'
     }
   }
 
@@ -52,7 +52,7 @@ def supportsNamespace() {
 
 android {
   if (supportsNamespace()) {
-    namespace "com.iovationreactnative"
+    namespace "com.reactnativeiovation"
 
     sourceSets {
       main {
@@ -66,7 +66,12 @@ android {
   defaultConfig {
     minSdkVersion getExtOrIntegerDefault("minSdkVersion")
     targetSdkVersion getExtOrIntegerDefault("targetSdkVersion")
+    buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
 
+  }
+
+  buildFeatures {
+    buildConfig true
   }
 
   buildTypes {
@@ -83,6 +88,17 @@ android {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
   }
+
+  sourceSets {
+    main {
+      if (isNewArchitectureEnabled()) {
+          java.srcDirs += [
+            // This is needed to build Kotlin project with NewArch enabled
+            "${project.buildDir}/generated/source/codegen/java"
+          ]
+      }
+    }
+  }
 }
 
 repositories {
@@ -91,6 +107,7 @@ repositories {
   flatDir {
       dirs 'libs'
   }
+
 }
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
@@ -101,6 +118,14 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  compileOnly fileTree(dir: 'libs', include: ['*.aar'])
+  compileOnly fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+}
+
+if (isNewArchitectureEnabled()) {
+  react {
+    jsRootDir = file("../src/")
+    libraryName = "Iovation"
+    codegenJavaPackageName = "com.reactnativeiovation"
+  }
 }
 

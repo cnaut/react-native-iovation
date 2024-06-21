@@ -1,21 +1,26 @@
-#import <React/RCTBridgeModule.h>
+#import "Iovation.h"
 
-@interface RCT_EXTERN_MODULE (Iovation, NSObject)
+@implementation Iovation
+RCT_EXPORT_MODULE()
 
-RCT_EXTERN_METHOD(multiply
-                  : (float)a withB
-                  : (float)b withResolver
-                  : (RCTPromiseResolveBlock)resolve withRejecter
-                  : (RCTPromiseRejectBlock)reject)
+// Don't compile this code when we build for the old architecture.
+#ifdef RCT_NEW_ARCH_ENABLED
+- (NSNumber *)multiply:(double)a b:(double)b {
+  NSNumber *result = @(a * b);
 
-RCT_EXTERN_METHOD(getBlackbox
-                  : (float)a withB
-                  : (float)b withResolver
-                  : (RCTPromiseResolveBlock)resolve withRejecter
-                  : (RCTPromiseRejectBlock)reject)
-
-+ (BOOL)requiresMainQueueSetup {
-  return NO;
+  return result;
 }
+
+- (NSNumber *)getBlackbox:(double)a b:(double)b {
+  NSNumber *result = @(a * b);
+
+  return result;
+}
+
+- (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
+    (const facebook::react::ObjCTurboModule::InitParams &)params {
+  return std::make_shared<facebook::react::NativeIovationSpecJSI>(params);
+}
+#endif
 
 @end
