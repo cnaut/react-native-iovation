@@ -15,8 +15,8 @@ class IovationModule(reactContext: ReactApplicationContext) :
   }
 
   @ReactMethod
-  fun multiply(a: Double, b: Double): Double {
-    return a * b
+  fun multiply(a: Double, b: Double, promise: Promise) {
+    promise.resolve(a * b)
   }
 
   val configuration = FraudForceConfiguration.Builder()
@@ -32,9 +32,9 @@ class IovationModule(reactContext: ReactApplicationContext) :
 	}
 
   @ReactMethod
-  fun getBlackbox(a: Double, b: Double): String {
+  fun getBlackbox(a: Double, b: Double, promise: Promise) {
     val blackbox = FraudForceManager.getBlackbox(context)
-    return blackbox
+    promise.resolve(blackbox)
   }
 
   companion object {
