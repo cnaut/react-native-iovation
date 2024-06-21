@@ -5,12 +5,16 @@ buildscript {
   repositories {
     google()
     mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
   }
 
   dependencies {
     classpath "com.android.tools.build:gradle:7.2.1"
     // noinspection DifferentKotlinGradleVersion
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    api fileTree(dir: 'libs', include: ['*.aar'])
   }
 }
 
@@ -86,8 +90,8 @@ repositories {
   mavenCentral()
   google()
   flatDir {
-          dirs 'libs'
-      }
+      dirs 'libs'
+  }
 }
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
