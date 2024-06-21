@@ -14,7 +14,6 @@ buildscript {
     classpath "com.android.tools.build:gradle:7.2.1"
     // noinspection DifferentKotlinGradleVersion
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    api fileTree(dir: 'libs', include: ['*.aar'])
   }
 }
 
@@ -102,6 +101,6 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  api fileTree(dir: 'libs', include: ['*.aar'])
+  compileOnly fileTree(dir: 'libs', include: ['*.aar'])
 }
 
