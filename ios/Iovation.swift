@@ -1,4 +1,4 @@
-//import FraudForce
+import FraudForce
 
 @objc(Iovation)
 class Iovation: NSObject {
@@ -10,7 +10,7 @@ class Iovation: NSObject {
 
   @objc(getBlackbox:withB:withResolver:withRejecter:)
   func getBlackbox(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-    //NSString *blackbox = [FraudForce blackbox];
-    resolve("test")
+    let blackbox = FraudForce.blackbox()
+    resolve(blackbox);
   }
 }
