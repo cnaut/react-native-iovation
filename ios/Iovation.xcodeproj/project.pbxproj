@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC67D8C82C23107C00EDBEC1 /* FraudForce.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */; };
+		AC67D8C92C23107C00EDBEC1 /* FraudForce.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC6ECC642C230F2F0000396C /* IovationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC632C230F2F0000396C /* IovationApp.swift */; };
+		AC6ECC662C230F2F0000396C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC652C230F2F0000396C /* ContentView.swift */; };
+		AC6ECC682C230F300000396C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6ECC672C230F300000396C /* Assets.xcassets */; };
+		AC6ECC6B2C230F300000396C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6ECC6A2C230F300000396C /* Preview Assets.xcassets */; };
+		AC6ECC762C230F300000396C /* IovationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC752C230F300000396C /* IovationTests.swift */; };
+		AC6ECC802C230F300000396C /* IovationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC7F2C230F300000396C /* IovationUITests.swift */; };
+		AC6ECC822C230F300000396C /* IovationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ECC812C230F300000396C /* IovationUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC6ECC722C230F300000396C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC6ECC582C230F2F0000396C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC6ECC5F2C230F2F0000396C;
+			remoteInfo = Iovation;
+		};
+		AC6ECC7C2C230F300000396C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC6ECC582C230F2F0000396C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC6ECC5F2C230F2F0000396C;
+			remoteInfo = Iovation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC67D8CA2C23107C00EDBEC1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC67D8C92C23107C00EDBEC1 /* FraudForce.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:WY8P975J56:iovation Inc."; lastKnownFileType = wrapper.xcframework; path = FraudForce.xcframework; sourceTree = "<group>"; };
+		AC6ECC602C230F2F0000396C /* Iovation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iovation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6ECC632C230F2F0000396C /* IovationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationApp.swift; sourceTree = "<group>"; };
+		AC6ECC652C230F2F0000396C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC6ECC672C230F300000396C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC6ECC6A2C230F300000396C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC6ECC6C2C230F300000396C /* Iovation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Iovation.entitlements; sourceTree = "<group>"; };
+		AC6ECC712C230F300000396C /* IovationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IovationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6ECC752C230F300000396C /* IovationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationTests.swift; sourceTree = "<group>"; };
+		AC6ECC7B2C230F300000396C /* IovationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IovationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6ECC7F2C230F300000396C /* IovationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationUITests.swift; sourceTree = "<group>"; };
+		AC6ECC812C230F300000396C /* IovationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IovationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC6ECC5D2C230F2F0000396C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC67D8C82C23107C00EDBEC1 /* FraudForce.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6ECC6E2C230F300000396C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6ECC782C230F300000396C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC67D8C62C23107C00EDBEC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC67D8C72C23107C00EDBEC1 /* FraudForce.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC6ECC572C230F2F0000396C = {
+			isa = PBXGroup;
+			children = (
+				AC6ECC622C230F2F0000396C /* Iovation */,
+				AC6ECC742C230F300000396C /* IovationTests */,
+				AC6ECC7E2C230F300000396C /* IovationUITests */,
+				AC6ECC612C230F2F0000396C /* Products */,
+				AC67D8C62C23107C00EDBEC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC6ECC612C230F2F0000396C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC6ECC602C230F2F0000396C /* Iovation.app */,
+				AC6ECC712C230F300000396C /* IovationTests.xctest */,
+				AC6ECC7B2C230F300000396C /* IovationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC6ECC622C230F2F0000396C /* Iovation */ = {
+			isa = PBXGroup;
+			children = (
+				AC6ECC632C230F2F0000396C /* IovationApp.swift */,
+				AC6ECC652C230F2F0000396C /* ContentView.swift */,
+				AC6ECC672C230F300000396C /* Assets.xcassets */,
+				AC6ECC6C2C230F300000396C /* Iovation.entitlements */,
+				AC6ECC692C230F300000396C /* Preview Content */,
+			);
+			path = Iovation;
+			sourceTree = "<group>";
+		};
+		AC6ECC692C230F300000396C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC6ECC6A2C230F300000396C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC6ECC742C230F300000396C /* IovationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC6ECC752C230F300000396C /* IovationTests.swift */,
+			);
+			path = IovationTests;
+			sourceTree = "<group>";
+		};
+		AC6ECC7E2C230F300000396C /* IovationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC6ECC7F2C230F300000396C /* IovationUITests.swift */,
+				AC6ECC812C230F300000396C /* IovationUITestsLaunchTests.swift */,
+			);
+			path = IovationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC6ECC5F2C230F2F0000396C /* Iovation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6ECC852C230F300000396C /* Build configuration list for PBXNativeTarget "Iovation" */;
+			buildPhases = (
+				AC6ECC5C2C230F2F0000396C /* Sources */,
+				AC6ECC5D2C230F2F0000396C /* Frameworks */,
+				AC6ECC5E2C230F2F0000396C /* Resources */,
+				AC67D8CA2C23107C00EDBEC1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Iovation;
+			productName = Iovation;
+			productReference = AC6ECC602C230F2F0000396C /* Iovation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC6ECC702C230F300000396C /* IovationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6ECC882C230F300000396C /* Build configuration list for PBXNativeTarget "IovationTests" */;
+			buildPhases = (
+				AC6ECC6D2C230F300000396C /* Sources */,
+				AC6ECC6E2C230F300000396C /* Frameworks */,
+				AC6ECC6F2C230F300000396C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC6ECC732C230F300000396C /* PBXTargetDependency */,
+			);
+			name = IovationTests;
+			productName = IovationTests;
+			productReference = AC6ECC712C230F300000396C /* IovationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC6ECC7A2C230F300000396C /* IovationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6ECC8B2C230F300000396C /* Build configuration list for PBXNativeTarget "IovationUITests" */;
+			buildPhases = (
+				AC6ECC772C230F300000396C /* Sources */,
+				AC6ECC782C230F300000396C /* Frameworks */,
+				AC6ECC792C230F300000396C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC6ECC7D2C230F300000396C /* PBXTargetDependency */,
+			);
+			name = IovationUITests;
+			productName = IovationUITests;
+			productReference = AC6ECC7B2C230F300000396C /* IovationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC6ECC582C230F2F0000396C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AC6ECC5F2C230F2F0000396C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AC6ECC702C230F300000396C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AC6ECC5F2C230F2F0000396C;
+					};
+					AC6ECC7A2C230F300000396C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AC6ECC5F2C230F2F0000396C;
+					};
+				};
+			};
+			buildConfigurationList = AC6ECC5B2C230F2F0000396C /* Build configuration list for PBXProject "Iovation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC6ECC572C230F2F0000396C;
+			productRefGroup = AC6ECC612C230F2F0000396C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC6ECC5F2C230F2F0000396C /* Iovation */,
+				AC6ECC702C230F300000396C /* IovationTests */,
+				AC6ECC7A2C230F300000396C /* IovationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC6ECC5E2C230F2F0000396C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6ECC6B2C230F300000396C /* Preview Assets.xcassets in Resources */,
+				AC6ECC682C230F300000396C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6ECC6F2C230F300000396C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6ECC792C230F300000396C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC6ECC5C2C230F2F0000396C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6ECC662C230F2F0000396C /* ContentView.swift in Sources */,
+				AC6ECC642C230F2F0000396C /* IovationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6ECC6D2C230F300000396C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6ECC762C230F300000396C /* IovationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6ECC772C230F300000396C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6ECC822C230F300000396C /* IovationUITestsLaunchTests.swift in Sources */,
+				AC6ECC802C230F300000396C /* IovationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC6ECC732C230F300000396C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC6ECC5F2C230F2F0000396C /* Iovation */;
+			targetProxy = AC6ECC722C230F300000396C /* PBXContainerItemProxy */;
+		};
+		AC6ECC7D2C230F300000396C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC6ECC5F2C230F2F0000396C /* Iovation */;
+			targetProxy = AC6ECC7C2C230F300000396C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC6ECC832C230F300000396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC6ECC842C230F300000396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AC6ECC862C230F300000396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Iovation/Iovation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Iovation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"-fmodules",
+					"-fcxx-modules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takenos.Iovation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AC6ECC872C230F300000396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Iovation/Iovation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Iovation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = (
+					"-fcxx-modules",
+					"-fmodules",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = takenos.Iovation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AC6ECC892C230F300000396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takenos.IovationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iovation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Iovation";
+			};
+			name = Debug;
+		};
+		AC6ECC8A2C230F300000396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takenos.IovationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iovation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Iovation";
+			};
+			name = Release;
+		};
+		AC6ECC8C2C230F300000396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takenos.IovationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Iovation;
+			};
+			name = Debug;
+		};
+		AC6ECC8D2C230F300000396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takenos.IovationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Iovation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC6ECC5B2C230F2F0000396C /* Build configuration list for PBXProject "Iovation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6ECC832C230F300000396C /* Debug */,
+				AC6ECC842C230F300000396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6ECC852C230F300000396C /* Build configuration list for PBXNativeTarget "Iovation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6ECC862C230F300000396C /* Debug */,
+				AC6ECC872C230F300000396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6ECC882C230F300000396C /* Build configuration list for PBXNativeTarget "IovationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6ECC892C230F300000396C /* Debug */,
+				AC6ECC8A2C230F300000396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6ECC8B2C230F300000396C /* Build configuration list for PBXNativeTarget "IovationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6ECC8C2C230F300000396C /* Debug */,
+				AC6ECC8D2C230F300000396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC6ECC582C230F2F0000396C /* Project object */;
+}
